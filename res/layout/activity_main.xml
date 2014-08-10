@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/home_splash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="home_splash" />
+
+    <TextView
+        android:id="@id/action_settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dp"
+        android:text="action_settings" />
+
+    <TextView
+        android:id="@android:id/tabcontent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="tabcontent" />
+
+    <include
+        android:id="@+id/include_1"
+        layout="@layout/include_layout" />
+
+    <include layout="@layout/include_layout" />
+
+   <!--  <ViewStub
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout="@layout/viewstub_layout" />
+ -->
+    <ViewStub
+        android:id="@+id/viewstub_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout="@layout/viewstub_layout" >
+    </ViewStub>
+
+</LinearLayout>
